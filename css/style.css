@@ -1061,7 +1061,7 @@ input[type="search"] {
   top: 50%; }
 
 .breadcrumbs-link:before {
-  right: 90%;
+  right: 93%;
   top: 50%; }
 
 .breadcrumbs-link:after {
@@ -1188,5 +1188,52 @@ h2.main-text__center {
 .main-login__forget-pass {
   display: block;
   margin: 10px 0 20px 70px; }
+
+.main-account {
+  margin: 5px 0; }
+  .main-account li {
+    margin-bottom: 10px;
+    width: 345px;
+    float: left;
+    margin-right: 10px; }
+    .main-account li a {
+      display: block;
+      color: #fff;
+      font-size: 14px;
+      font-family: "UbuntuB", "Open Sans", sans-serif;
+      font-weight: normal;
+      background: #218f5c;
+      padding: 10px 60px 10px 100px;
+      text-transform: uppercase;
+      position: relative; }
+      .main-account li a:hover {
+        background: #2ab474; }
+      .main-account li a:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 31px;
+        height: 35px;
+        top: 2px;
+        left: 30px; }
+      .main-account li a:after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-left: solid 1px #fff;
+        top: 3px;
+        left: 82px;
+        height: 30px;
+        width: 1px; }
+  .main-account li:nth-of-type(1) a:before {
+    background: url("../img/icon-sprites.png") -18px -3px no-repeat;
+    width: 30px;
+    height: 30px; }
+  .main-account li:nth-of-type(2) a:before {
+    background: url("../img/icon-sprites.png") -80px 0 no-repeat; }
+  .main-account li:nth-of-type(3) a:before {
+    background: url("../img/icon-sprites.png") -143px 0 no-repeat; }
+  .main-account li:nth-of-type(4) a:before {
+    background: url("../img/icon-sprites.png") -176px 0 no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
