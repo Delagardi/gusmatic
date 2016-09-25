@@ -1008,6 +1008,9 @@ input[type="search"] {
       position: relative;
       top: -1px; }
 
+.main {
+  min-height: 550px; }
+
 /* Breadcrumbs START */
 .breadcrumbs {
   margin-top: 20px; }
@@ -1089,8 +1092,73 @@ input[type="search"] {
   padding-bottom: 10px; }
 
 .main-signup, .main-login {
-  width: 442px;
+  width: 440px;
   height: 100%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
+
+.main-signup h3, .main-login h3 {
+  font-size: 18px;
+  font-family: "UbuntuB", "Open Sans", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  background: #218f5c;
+  padding: 15px;
+  text-transform: uppercase;
+  margin-top: 0;
+  width: 320px; }
+
+.main-forms dl {
+  margin-left: 0; }
+
+.main-forms dd {
+  font-size: 16px;
+  font-family: "HelveticaNC-Medium", "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-left: 0;
+  width: 70px;
+  float: left;
+  line-height: 35px; }
+
+.main-forms dt {
+  width: 270px;
+  margin-left: 70px; }
+
+.main-forms dt:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.form-field {
+  width: 270px;
+  height: 29px;
+  margin-bottom: 5px;
+  background: #d0d0d0;
+  border-radius: 3px;
+  border: none;
+  padding: 0 5px; }
+
+.main-signup__btn, .main-login__btn {
+  font-size: 14px;
+  font-family: "UbuntuB", "Open Sans", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  background: #218f5c;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-align: center;
+  border: none;
+  margin-left: 70px;
+  cursor: pointer; }
+
+.main-signup__btn:hover, .main-login__btn:hover {
+  background: #2ab474; }
+
+.main-login__btn {
+  padding: 10px 60px; }
+
+.main-login__forget-pass {
+  display: block;
+  margin: 10px 0 20px 70px; }
 
 /*# sourceMappingURL=style.css.map */

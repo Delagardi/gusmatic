@@ -1192,6 +1192,10 @@ input[type="search"] {
   }
 }
 
+.main {
+  min-height: 550px;
+}
+
 /* Breadcrumbs START */
 
 .breadcrumbs {
@@ -1286,8 +1290,84 @@ input[type="search"] {
 }
 
 .main-signup, .main-login {
-  width: 442px;
+  width: 440px;
   height: 100%;
   display: inline-block;
+  vertical-align: top;
 }
+
+.main-signup h3, .main-login h3 {
+  @include text(18px, "UbuntuB");
+  color: $text-color__add;
+  background: $design-color__green;
+  padding: 15px;
+  text-transform: uppercase;
+  margin-top: 0;
+  width: 320px;
+}
+
+.main-forms dl {
+  margin-left: 0;
+}
+
+.main-forms dd {
+  @include text(16px, "HelveticaNC-Medium");
+  margin-left: 0;
+  width: 70px;
+  float: left;
+  line-height: 35px;
+}
+
+.main-forms dt {
+  width: 270px;
+  margin-left: 70px;
+}
+
+.main-forms dt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-field {
+  width: 270px;
+  height: 29px;
+  margin-bottom: 5px;
+  background: #d0d0d0;
+  border-radius: 3px;
+  border: none;
+  padding: 0 5px;
+}
+
+.main-signup__btn {
+  @include text(14px, "UbuntuB");
+  color: $text-color__add;
+  background: $design-color__green;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  text-align: center;
+  border: none;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.main-signup__btn:hover {
+  background: $design-color__green-hover;
+}
+
+.main-login__btn {
+  @extend .main-signup__btn;
+  padding: 10px 60px;
+}
+
+.main-login__forget-pass {
+  display: block;
+  margin: 10px 0 20px 70px;
+}
+
+
+
+
+
+
 

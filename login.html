@@ -112,21 +112,37 @@
           <div class="main-signup">
             <h3>Регистрация</h3>
             <form class="main-signup__form" action="" method="post" >
-              Email
-              <input type="email" name="email">
+              <dl>
+                <dd>
+                  Email:
+                </dd>
+                <dt>
+                  <input class="form-field" type="email" name="email">
+                </dt>
+              </dl>
+              <input class="main-signup__btn" type="submit" value="Регистрация">
             </form>
-            <a href="#">Регистрация</a>
           </div>
           <div class="main-login">
             <h3>Уже зарегистрированны?</h3>
             <form class="main-signup__form" action="" method="post" >
-              Email
-              <input type="email" name="email">
-              Пароль
-              <input type="password" name="pass">
+              <dl>
+                <dd>
+                  Email:
+                </dd>
+                <dt>
+                  <input class="form-field" type="email" name="email">
+                </dt>
+                <dd>
+                  Пароль:
+                </dd>
+                <dt>
+                  <input class="form-field" type="password" name="pass">
+                </dt>
+              </dl> 
+              <input class="main-login__btn" type="submit" value="Вход">
+              <a class="main-login__forget-pass" href="#">Забыли пароль?</a>
             </form>
-            <a href="#">Вход</a>
-            <a href="#">Забыли пароль?</a>
           </div>
         </div>
       </div>
