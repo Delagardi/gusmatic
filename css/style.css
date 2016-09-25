@@ -985,28 +985,52 @@ input[type="search"] {
     margin-top: 10px;
     float: right; }
 
-.accordion {
+.sidebar-additional .accordion {
   margin: 5px 0; }
-  .accordion dt, .accordion dd {
+  .sidebar-additional .accordion dt, .sidebar-additional .accordion dd {
     margin-bottom: 5px; }
-    .accordion dt a, .accordion dd a {
+    .sidebar-additional .accordion dt a, .sidebar-additional .accordion dd a {
       display: block;
       color: #fff;
       font-size: 14px;
       font-family: "UbuntuB", "Open Sans", sans-serif;
       font-weight: normal;
       background: #218f5c;
-      padding: 10px 10px;
-      text-transform: uppercase; }
-      .accordion dt a:hover, .accordion dd a:hover {
+      padding: 10px 60px 10px 100px;
+      text-transform: uppercase;
+      position: relative; }
+      .sidebar-additional .accordion dt a:hover, .sidebar-additional .accordion dd a:hover {
         background: #2ab474; }
-  .accordion dd {
+      .sidebar-additional .accordion dt a:before, .sidebar-additional .accordion dd a:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 35px;
+        top: 0;
+        left: 30px; }
+      .sidebar-additional .accordion dt a:after, .sidebar-additional .accordion dd a:after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-left: solid 1px #fff;
+        top: 3px;
+        left: 82px;
+        height: 30px;
+        width: 1px; }
+  .sidebar-additional .accordion dd {
     font-size: 12px;
     margin-left: 0;
     padding: 0; }
-    .accordion dd:last-of-type {
+    .sidebar-additional .accordion dd:last-of-type {
       position: relative;
       top: -1px; }
+  .sidebar-additional .accordion dt:nth-of-type(1) a:before {
+    background: url("../img/icon-sprites.png") -46px 0 no-repeat; }
+  .sidebar-additional .accordion dt:nth-of-type(2) a:before {
+    background: url("../img/icon-sprites.png") -80px 0 no-repeat; }
+  .sidebar-additional .accordion dt:nth-of-type(3) a:before {
+    background: url("../img/icon-sprites.png") -111px 0 no-repeat; }
 
 .main {
   min-height: 550px; }

@@ -1163,7 +1163,7 @@ input[type="search"] {
   }
 }
 
-.accordion {
+.sidebar-additional .accordion {
    margin: 5px 0;   
    dt, dd {
       margin-bottom: 5px;
@@ -1174,21 +1174,50 @@ input[type="search"] {
         color: $text-color__add;
         @include text(14px, "UbuntuB");
         background: $design-color__green;
-        padding: 10px 10px;
+        padding: 10px 60px 10px 100px;
         text-transform: uppercase;
+        position: relative;
         &:hover {
           background: $design-color__green-hover;
         }
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 35px;
+          height: 35px;
+          top: 0;
+          left: 30px;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          border-left: solid 1px #fff;
+          top: 3px;
+          left: 82px;
+          height: 30px;
+          width: 1px;
+        }
       }
-   }
+    }
   dd {
-     font-size: 12px;
+      font-size: 12px;
       margin-left: 0;
       padding: 0;
-     &:last-of-type {
-       position: relative;
-       top: -1px;
-     }
+      &:last-of-type {
+        position: relative;
+        top: -1px;
+      }
+  }
+  dt:nth-of-type(1) a:before {
+    background: url("../img/icon-sprites.png") -46px 0 no-repeat;
+  }
+  dt:nth-of-type(2) a:before {
+    background: url("../img/icon-sprites.png") -80px 0 no-repeat;
+  }
+  dt:nth-of-type(3) a:before {
+    background: url("../img/icon-sprites.png") -111px 0 no-repeat;
   }
 }
 
