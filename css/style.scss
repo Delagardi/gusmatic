@@ -1638,6 +1638,78 @@ h2.main-text__center {
   border-top-color: #d0d0d0;
 }
 
+
+.form-checkboxes__item {
+  position: relative;
+}
+
+.email-news + label, .email-partners + label {
+  cursor: pointer;
+}
+
+.email-news:not(checked), .email-partners:not(checked) {
+  position: absolute;
+  top: 10px;
+  left: 36px;
+  opacity: 0;
+}
+
+.email-news:not(checked) + label, .email-partners:not(checked) + label {
+  @include text(16px, "HelveticaNC-Medium");
+  position: relative;
+  display: block;
+  margin: 0 0 0 -250px;
+  line-height: 25px;
+}
+
+.email-news:not(checked) + label:before, .email-partners:not(checked) + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-sprites.png") -48px -63px no-repeat;
+}
+
+.email-news:checked + label:before, .email-partners:checked + label:before {
+  background: url("../img/icon-sprites.png") -48px -88px no-repeat;
+}
+
+
+// .invitation-rules__checkbox + label {
+//   cursor: pointer;
+// }
+
+// .invitation-rules__checkbox:not(checked) {
+//   position: absolute;
+//   top: 10px;
+//   left: 36px;
+//   opacity: 0;
+// }
+
+// .invitation-rules__checkbox:not(checked) + label {
+//   position: relative;
+//   display: block;
+//   padding: 7px 0 0 31px;
+//   line-height: 25px;
+// }
+
+// .invitation-rules__checkbox:not(checked) + label:before {
+//   content: "";
+//   position: absolute;
+//   top: 12px;
+//   left: 34px;
+//   width: 15px;
+//   height: 15px;
+//   background: url("../img/sprite-main.png") -205px -135px no-repeat;
+// }
+
+// .invitation-rules__checkbox:checked + label:before {
+//   background: url("../img/sprite-main.png") -205px -119px no-repeat;
+// }
+
+
 // .select-arrow-3 {
 //   position: absolute;
 //   z-index: 5;

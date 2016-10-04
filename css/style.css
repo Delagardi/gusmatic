@@ -1395,4 +1395,37 @@ h2.main-text__center {
   top: 8px;
   border-top-color: #d0d0d0; }
 
+.form-checkboxes__item {
+  position: relative; }
+
+.email-news + label, .email-partners + label {
+  cursor: pointer; }
+
+.email-news:not(checked), .email-partners:not(checked) {
+  position: absolute;
+  top: 10px;
+  left: 36px;
+  opacity: 0; }
+
+.email-news:not(checked) + label, .email-partners:not(checked) + label {
+  font-size: 16px;
+  font-family: "HelveticaNC-Medium", "Open Sans", sans-serif;
+  font-weight: normal;
+  position: relative;
+  display: block;
+  margin: 0 0 0 -250px;
+  line-height: 25px; }
+
+.email-news:not(checked) + label:before, .email-partners:not(checked) + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-sprites.png") -48px -63px no-repeat; }
+
+.email-news:checked + label:before, .email-partners:checked + label:before {
+  background: url("../img/icon-sprites.png") -48px -88px no-repeat; }
+
 /*# sourceMappingURL=style.css.map */
